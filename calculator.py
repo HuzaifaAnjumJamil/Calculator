@@ -119,3 +119,27 @@ class Application(Frame):
         self.Clearbutton = Button(self, bg="#E6D72A", bd=12,
                                   text="AC", font=("Helvetica", 20, "bold"), width=28, padx=7, command=self.ClearDisplay)
         self.Clearbutton.grid(row=1, columnspan=4, sticky=W)
+
+    def buttonClick(self, number):
+        self.task = str(self.task) + str(number)
+        self.UserIn.set(self.task)
+
+    def CalculateTask(self):
+        self.data = self.user_input.get()
+        try:
+            self.answer = eval(self.data)
+            self.displayText(self.answer)
+            self.task = self.answer
+
+        except SyntaxError as e:
+            self.displayText("Invalid Syntax!")
+            self.task = ""
+
+    def displayText(self, value):
+        self.user_input.delete(0, END)
+        self.user_input.insert(0, value)
+
+    def ClearDisplay(self):
+        self.task = ""
+        self.user_input.delete(0, END)
+        self.user_input.insert(0, "0")
