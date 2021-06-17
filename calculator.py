@@ -114,3 +114,8 @@ class Application(Frame):
                                   text="=",  padx=100, pady=25,
                                   command=self.CalculateTask, font=("Helvetica", 20, "bold"))
         self.Equalbutton.grid(row=5, column=1, sticky=W, columnspan=2)
+
+        # Clear Button
+        self.Clearbutton = Button(self, bg="#E6D72A", bd=12,
+                                  text="AC", font=("Helvetica", 20, "bold"), width=28, padx=7, command=self.ClearDisplay)
+        self.Clearbutton.grid(row=1, columnspan=4, sticky=W)
