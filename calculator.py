@@ -143,3 +143,13 @@ class Application(Frame):
         self.task = ""
         self.user_input.delete(0, END)
         self.user_input.insert(0, "0")
+
+
+calculator = Tk()
+
+calculator.title("Calculator")
+app = Application(calculator)
+# Make window fixed (cannot be resized)
+calculator.resizable(width=False, height=False)
+
+calculator.mainloop()
