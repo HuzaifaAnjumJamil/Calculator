@@ -35,3 +35,27 @@ class Application(Frame):
                               text="1",  padx=33, pady=25,
                               command=lambda: self.buttonClick(1), font=("Helvetica", 20, "bold"))
         self.button7.grid(row=4, column=0, sticky=W)
+
+       # Button for value 2
+        self.button8 = Button(self, bg="#98DBC6", bd=12,
+                              text="2",  padx=35, pady=25,
+                              command=lambda: self.buttonClick(2), font=("Helvetica", 20, "bold"))
+        self.button8.grid(row=4, column=1, sticky=W)
+
+        # Button for value 3
+        self.button9 = Button(self, bg="#98DBC6", bd=12,
+                              text="3",  padx=33, pady=25,
+                              command=lambda: self.buttonClick(3), font=("Helvetica", 20, "bold"))
+        self.button9.grid(row=4, column=2, sticky=W)
+
+        # Button for value 4
+        self.button4 = Button(self, bg="#98DBC6", bd=12,
+                              text="4",  padx=33, pady=25,
+                              command=lambda: self.buttonClick(4), font=("Helvetica", 20, "bold"))
+        self.button4.grid(row=3, column=0, sticky=W)
+
+        # Button for value 5
+        self.button5 = Button(self, bg="#98DBC6", bd=12,
+                              text="5",  padx=35, pady=25,
+                              command=lambda: self.buttonClick(5), font=("Helvetica", 20, "bold"))
+        self.button5.grid(row=3, column=1, sticky=W)
