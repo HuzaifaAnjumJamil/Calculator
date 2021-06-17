@@ -59,3 +59,27 @@ class Application(Frame):
                               text="5",  padx=35, pady=25,
                               command=lambda: self.buttonClick(5), font=("Helvetica", 20, "bold"))
         self.button5.grid(row=3, column=1, sticky=W)
+
+        # Button for value 6
+        self.button6 = Button(self, bg="#98DBC6", bd=12,
+                              text="6",  padx=33, pady=25,
+                              command=lambda: self.buttonClick(6), font=("Helvetica", 20, "bold"))
+        self.button6.grid(row=3, column=2, sticky=W)
+
+        # Button for value 7
+        self.button1 = Button(self, bg="#98DBC6", bd=12,
+                              text="7", padx=33, pady=25, font=("Helvetica", 20, "bold"),
+                              command=lambda: self.buttonClick(7))
+        self.button1.grid(row=2, column=0, sticky=W)
+
+        # Button for value 8
+        self.button2 = Button(self, bg="#98DBC6", bd=12,
+                              text="8",  padx=35, pady=25,
+                              command=lambda: self.buttonClick(8), font=("Helvetica", 20, "bold"))
+        self.button2.grid(row=2, column=1, sticky=W)
+
+        # Button for value 9
+        self.button3 = Button(self, bg="#98DBC6", bd=12,
+                              text="9",  padx=33, pady=25,
+                              command=lambda: self.buttonClick(9), font=("Helvetica", 20, "bold"))
+        self.button3.grid(row=2, column=2, sticky=W)
