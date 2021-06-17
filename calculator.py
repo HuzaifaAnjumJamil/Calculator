@@ -83,3 +83,16 @@ class Application(Frame):
                               text="9",  padx=33, pady=25,
                               command=lambda: self.buttonClick(9), font=("Helvetica", 20, "bold"))
         self.button3.grid(row=2, column=2, sticky=W)
+
+        # Operator buttons
+        # Addition button
+        self.Addbutton = Button(self, bg="#98DBC6", bd=12,
+                                text="+",  padx=36, pady=25,
+                                command=lambda: self.buttonClick("+"), font=("Helvetica", 20, "bold"))
+        self.Addbutton.grid(row=2, column=3, sticky=W)
+
+        # Subtraction button
+        self.Subbutton = Button(self, bg="#98DBC6", bd=12,
+                                text="-",  padx=39, pady=25,
+                                command=lambda: self.buttonClick("-"), font=("Helvetica", 20, "bold"))
+        self.Subbutton.grid(row=3, column=3, sticky=W)
