@@ -96,3 +96,21 @@ class Application(Frame):
                                 text="-",  padx=39, pady=25,
                                 command=lambda: self.buttonClick("-"), font=("Helvetica", 20, "bold"))
         self.Subbutton.grid(row=3, column=3, sticky=W)
+
+        # Multiplication button
+        self.Multbutton = Button(self, bg="#98DBC6", bd=12,
+                                 text="*",  padx=38, pady=25,
+                                 command=lambda: self.buttonClick("*"), font=("Helvetica", 20, "bold"))
+        self.Multbutton.grid(row=4, column=3, sticky=W)
+
+        # Division button
+        self.Divbutton = Button(self, bg="#98DBC6", bd=12,
+                                text="/",  padx=39, pady=25,
+                                command=lambda: self.buttonClick("/"), font=("Helvetica", 20, "bold"))
+        self.Divbutton.grid(row=5, column=3, sticky=W)
+
+        # Equal button
+        self.Equalbutton = Button(self, bg="#E6D72A", bd=12,
+                                  text="=",  padx=100, pady=25,
+                                  command=self.CalculateTask, font=("Helvetica", 20, "bold"))
+        self.Equalbutton.grid(row=5, column=1, sticky=W, columnspan=2)
